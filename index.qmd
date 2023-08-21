@@ -116,7 +116,7 @@ format:
 
 ::: footer
 
-::: {style="text-align:inherit; color: #222222;"}
+::: {style="text-align:inherit; color: #222222; font-size: 0.8em;"}
 
 [[{{< fa brands github >}} `saforem2/`](https://github.com/saforem2/)]{style="border-bottom: 0.5px solid #29B6F6; color: #F06292!important;"}[[`slides-template`](https://github.com/saforem2/scaling4science)]{style="border-bottom: 0.5px solid #29B6F6;"}
 :::
@@ -213,7 +213,7 @@ If these were <span style="color:#00CCFF;">independent</span>, we could approxim
 
 [^notation]: Here, $\sim$ means "is distributed according to"
 
-::: footer
+::: footer {style="font-size:0.8em;"}
 [{{< fa brands github >}} `saforem2/lattice23`](https://saforem2.github.io/lattice23)
 :::
 
