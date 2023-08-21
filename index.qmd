@@ -1,0 +1,219 @@
+---
+engine: jupyter
+jupyter: slides
+format:
+  revealjs:
+    title-block-style: none
+    slide-number: c
+    title-slide-style: default
+    chalkboard:
+      buttons: false
+    auto-animate: true
+    reference-location: section
+    touch: true
+    pause: false
+    footnotes-hover: true
+    citations-hover: true
+    preview-links: true
+    controls-tutorial: true
+    controls: false
+    logo: "https://raw.githubusercontent.com/saforem2/saforem2.github.io/master/favicon.svg"
+    history: false
+    theme: [dark, css/dark.scss]
+    css: [css/default.css, css/callouts.css, css/code-callout.css]
+    self-contained: false
+    embed-resources: false
+    self-contained-math: false
+    center: true
+    highlight-style: "atom-one"
+    default-image-extension: svg
+    code-line-numbers: true
+    code-overflow: scroll
+    html-math-method: katex
+    fig-align: center
+    title: "Slides Template"
+    mermaid:
+      theme: dark
+---
+
+<!-- # {.title-slide .centeredslide background-iframe="https://saforem2.github.io/grid-worms-animation/" loading="lazy"} -->
+# {.centeredslide background-iframe="https://saforem2.github.io/grid-worms-animation/" loading="lazy"}
+# {.title-slide .centeredslide background-iframe="https://saforem2.github.io/grid-worms-animation/" loading="lazy"}
+
+::: {style="background-color: rgba(22,22,22,0.75); border-radius: 10px; text-align:center; padding: 0px; padding-left: 1.5em; padding-right: 1.5em; max-width: min-content; min-width: max-content; margin-left: auto; margin-right: auto; padding-top: 0.2em; padding-bottom: 0.2em; line-height: 1.5em!important;"}
+
+[Slide Template]{style="color:#939393; font-size:1.5em; font-weight: bold;"}  
+[(feel free to make your own!)]{style="color:#777777; font-size:1.2em; font-weight: bold;"}  
+[<br>&nbsp;]{style="padding-bottom: 0.5rem;"}  
+[{{< fa solid home >}}](https://samforeman.me) Sam Foreman  
+<!-- [Xiao-Yong Jin, James C. Osborn]{.dim-text style="font-size:0.8em;"}   -->
+[[{{< fa brands github >}} `saforem2/`](https://github.com/saforem2/)]{style="border-bottom: 0.5px solid #00ccff;"}[[`slide-template`](https://github.com/saforem2/slide-template)]{style="border-bottom: 0.5px solid #00ccff;"}
+
+:::
+
+::: footer
+
+[YYYY-MM-DD @ [Nobel Prize Award Ceremony](https://yeah-right.com)]{.dim-text style="text-align:left;'}
+
+:::
+
+# [Ongoing Work \& Collaborations]{style="color: #1c1c1c"} {.centeredslide background-color=#FCFCFC style="color: #333333;"}
+
+::::::::::::::::::: {.columns}
+
+:::::: {.column width="50%"}
+
+::::: {.callout-note title="Cool Callouts" collapse=false width="100%" style="background-color: #FFFFFF;"}
+
+- [{{< fa brands github >}} `saforem2/Megatron-DeepSpeed`](https://github.com/saforem2/Megatron-DeepSpeed)
+
+:::::
+
+
+::::: {.callout-important title="Climate Modeling" collapse=false style="background-color: #FFFFFF;"}
+
+- ViT for Climate Models [[WIP]]{.red-text}
+
+- [ClimRR: Climate Risk \& Resiliency Portal](https://disgeoportal.egs.anl.gov/ClimRR/)
+
+::: {.r-stack style="text-align:center;"}
+[![](./assets/globe_specific_hum_wind.gif){width="70%"}]{}
+
+[![](./assets/forecast1.png)]{.fragment width="100%" style="margin-top: 1em;"}
+
+[![](./assets/forecast2.png)]{.fragment width="100%" style="margin-top: 2em;"}
+
+[![](./assets/forecast3.png)]{.fragment width="100%" style="margin-top: 2em;"}
+
+:::
+
+:::::
+
+::::::
+
+:::::: {.column width="50%"}
+
+::: {.callout-tip title="Lattice QCD" collapse=false style="width:100%!important;"}
+
+- [![](https://raw.githubusercontent.com/saforem2/l2hmc-qcd/main/assets/logo-small.svg){style="height:3.92rem; margin:unset;"}](https://saforem2.github.io/l2hmc-qcd)
+  - [{{< fa brands github >}} `saforem2/l2hmc-qcd`](https://github.com/saforem2/l2hmc-qcd)
+
+- [MLMC @ Lattice 23](https://saforem2.github.io/lattice23)
+  - [{{< fa brands github >}} `saforem2/lattice23`](https://github.com/saforem2/lattice23)
+- [LQCD @ PASC 23](https://saforem2.github.io/lqcd-pasc23)
+  - [{{< fa brands github >}} `saforem2/lqcd-pasc23`](https://github.com/saforem2/lattice23)
+
+
+
+![](https://saforem2.github.io/lattice23/assets/SU3/logdet_ridgeplot2.svg){width="90%" style="margin-top: -1rem;"}
+
+:::
+
+::::::
+
+:::::::::::::::::::
+
+
+::: footer
+
+::: {style="text-align:inherit; color: #222222;"}
+
+[[{{< fa brands github >}} `saforem2/`](https://github.com/saforem2/)]{style="border-bottom: 0.5px solid #29B6F6; color: #F06292!important;"}[[`slides-template`](https://github.com/saforem2/scaling4science)]{style="border-bottom: 0.5px solid #29B6F6;"}
+:::
+
+:::
+
+# [Quarto](https://quarto.org/docs/presentations/revealjs/) + [Reveal.js](https://revealjs.com/)
+
+- [Quarto Guide](https://quarto.org/docs/guide/)
+  - Comprehensive guide to using Quarto
+  - Start with the [tutorial](https://quarto.org/docs/get-started/) if you're new to Quarto
+
+
+# Executable Code {style="font-size:0.75rem;"}
+
+```{python}
+#| echo: true
+#| output-location: column
+import numpy as np
+import matplotlib.pyplot as plt
+
+from slides import set_plot_style
+
+set_plot_style()
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw={
+    'projection': 'polar'
+  }
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1.0, 1.5, 2.])
+ax.grid(True)
+plt.show()
+```
+
+# Tabsets
+
+::: {.panel-tabset}
+
+### Tab A
+
+Content for `Tab A`
+
+### Tab B
+
+Content for `Tab B`
+
+:::
+
+
+# Overview
+
+1. [Background: `{MCMC,HMC}`](#markov-chain-monte-carlo-mcmc-centeredslide)
+    - [Leapfrog Integrator](#leapfrog-integrator-hmc-centeredslide)
+    - [Issues with HMC](#sec-issues-with-hmc)
+    - [Can we do better?](#sec-can-we-do-better)
+2. [L2HMC: Generalizing MD](#sec-l2hmc)
+    - [4D $SU(3)$ Model](#sec-su3)
+    - [Results](#sec-results)
+3. [References](#sec-references)
+4. [Extras](#sec-extras)
+
+
+# Markov Chain Monte Carlo (MCMC) {.centeredslide}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {.callout-note title="Goal" style="text-align:left;!important"}
+Generate **independent** samples $\{x_{i}\}$, such that[^notation]
+$$\{x_{i}\} \sim p(x) \propto e^{-S(x)}$$
+where $S(x)$ is the _action_ (or potential energy)
+:::
+
+- Want to calculate observables $\mathcal{O}$:  
+  $\left\langle \mathcal{O}\right\rangle \propto \int \left[\mathcal{D}x\right]\hspace{4pt} {\mathcal{O}(x)\, p(x)}$
+
+:::
+
+::: {.column width="49%"}
+![](https://raw.githubusercontent.com/saforem2/deep-fridays/main/assets/normal_distribution.dark.svg)
+:::
+
+::::
+
+If these were <span style="color:#00CCFF;">independent</span>, we could approximate:
+  $\left\langle\mathcal{O}\right\rangle \simeq \frac{1}{N}\sum^{N}_{n=1}\mathcal{O}(x_{n})$  
+  $$\sigma_{\mathcal{O}}^{2} = \frac{1}{N}\mathrm{Var}{\left[\mathcal{O} (x)
+  \right]}\Longrightarrow \sigma_{\mathcal{O}} \propto \frac{1}{\sqrt{N}}$$
+
+[^notation]: Here, $\sim$ means "is distributed according to"
+
+::: footer
+[{{< fa brands github >}} `saforem2/lattice23`](https://saforem2.github.io/lattice23)
+:::
+
