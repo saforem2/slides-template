@@ -19,8 +19,22 @@ format:
     controls: false
     logo: "https://raw.githubusercontent.com/saforem2/saforem2.github.io/master/favicon.svg"
     history: false
-    theme: [dark, css/dark.scss]
-    css: [css/default.css, css/callouts.css, css/code-callout.css]
+    # theme: [dark, css/dark-slides.scss]
+    theme: [css/syntax-dark.scss, css/dark-slides.scss]
+    css:
+      - "css/default.css"
+      - css/callouts-slides.css
+      # - "css/callouts.css"
+    # theme: [dark: [css/common.scss, css/dark.scss, css/syntax-dark.scss], light: [css/common.scss, css/light.scss, css/syntax-light.scss]]
+      # dark:
+      #   - "css/common.scss"
+      #   - "css/dark.scss"
+      #   - "css/syntax-dark.scss"
+      # light:
+      #   - "css/common.scss"
+      #   - "css/light.scss"
+      #   - "css/syntax-light.scss"
+    # css: [css/default.css, css/callouts.css, css/code-callout.css]
     self-contained: false
     embed-resources: false
     self-contained-math: false
@@ -37,7 +51,8 @@ format:
 ---
 
 <!-- # {.title-slide .centeredslide background-iframe="https://saforem2.github.io/grid-worms-animation/" loading="lazy"} -->
-# {.centeredslide background-iframe="https://saforem2.github.io/grid-worms-animation/" loading="lazy"}
+# Testing {background-iframe="https://saforem2.github.io/grid-worms-animation/" loading="lazy"}
+
 # {.title-slide .centeredslide background-iframe="https://saforem2.github.io/grid-worms-animation/" loading="lazy"}
 
 ::: {style="background-color: rgba(22,22,22,0.75); border-radius: 10px; text-align:center; padding: 0px; padding-left: 1.5em; padding-right: 1.5em; max-width: min-content; min-width: max-content; margin-left: auto; margin-right: auto; padding-top: 0.2em; padding-bottom: 0.2em; line-height: 1.5em!important;"}
@@ -46,7 +61,6 @@ format:
 [(feel free to make your own!)]{style="color:#777777; font-size:1.2em; font-weight: bold;"}  
 [<br>&nbsp;]{style="padding-bottom: 0.5rem;"}  
 [{{< fa solid home >}}](https://samforeman.me) Sam Foreman  
-<!-- [Xiao-Yong Jin, James C. Osborn]{.dim-text style="font-size:0.8em;"}   -->
 [[{{< fa brands github >}} `saforem2/`](https://github.com/saforem2/)]{style="border-bottom: 0.5px solid #00ccff;"}[[`slide-template`](https://github.com/saforem2/slide-template)]{style="border-bottom: 0.5px solid #00ccff;"}
 
 :::
@@ -56,6 +70,7 @@ format:
 [YYYY-MM-DD @ [Nobel Prize Award Ceremony](https://yeah-right.com)]{.dim-text style="text-align:left;'}
 
 :::
+
 
 # [Ongoing Work \& Collaborations]{style="color: #1c1c1c"} {.centeredslide background-color=#FCFCFC style="color: #333333;"}
 
@@ -130,7 +145,9 @@ format:
   - Start with the [tutorial](https://quarto.org/docs/get-started/) if you're new to Quarto
 
 
-# Executable Code {style="font-size:0.75rem;"}
+# Executable Code
+
+::: {style="font-size: 0.95em;"}
 
 ```{python}
 #| echo: true
@@ -154,6 +171,8 @@ ax.set_rticks([0.5, 1.0, 1.5, 2.])
 ax.grid(True)
 plt.show()
 ```
+
+:::
 
 # Tabsets
 
