@@ -39,7 +39,7 @@ format:
     embed-resources: false
     self-contained-math: false
     center: true
-    highlight-style: "atom-one"
+    # highlight-style: "atom-one"
     default-image-extension: svg
     code-line-numbers: true
     code-overflow: scroll
@@ -144,10 +144,7 @@ format:
   - Comprehensive guide to using Quarto
   - Start with the [tutorial](https://quarto.org/docs/get-started/) if you're new to Quarto
 
-
-# Executable Code
-
-::: {style="font-size: 0.95em;"}
+# Executable Code {style="font-size: 0.9em;"}
 
 ```{python}
 #| echo: true
@@ -171,8 +168,6 @@ ax.set_rticks([0.5, 1.0, 1.5, 2.])
 ax.grid(True)
 plt.show()
 ```
-
-:::
 
 # Tabsets
 
@@ -232,7 +227,13 @@ If these were <span style="color:#00CCFF;">independent</span>, we could approxim
 
 [^notation]: Here, $\sim$ means "is distributed according to"
 
-::: footer {style="font-size:0.8em;"}
+::: footer
+
+:::  {style="font-size:0.9em;"}
+
 [{{< fa brands github >}} `saforem2/lattice23`](https://saforem2.github.io/lattice23)
+
+:::
+
 :::
 
