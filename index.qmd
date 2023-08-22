@@ -67,7 +67,7 @@ format:
 
 ::: footer
 
-[YYYY-MM-DD @ [Nobel Prize Award Ceremony](https://yeah-right.com)]{.dim-text style="text-align:left;'}
+[2023-08-21 @ [Nobel Prize Award Ceremony](https://yeah-right.com)]{.dim-text style="text-align:left;'}
 
 :::
 
@@ -79,6 +79,8 @@ format:
 :::::: {.column width="50%"}
 
 ::::: {.callout-note title="Cool Callouts" collapse=false width="100%" style="background-color: #FFFFFF;"}
+
+- In light mode!
 
 - [{{< fa brands github >}} `saforem2/Megatron-DeepSpeed`](https://github.com/saforem2/Megatron-DeepSpeed)
 
@@ -113,9 +115,9 @@ format:
 - [![](https://raw.githubusercontent.com/saforem2/l2hmc-qcd/main/assets/logo-small.svg){style="height:3.92rem; margin:unset;"}](https://saforem2.github.io/l2hmc-qcd)
   - [{{< fa brands github >}} `saforem2/l2hmc-qcd`](https://github.com/saforem2/l2hmc-qcd)
 
-- [MLMC @ Lattice 23](https://saforem2.github.io/lattice23)
+- [{{< fa solid person-chalkboard >}} MLMC @ Lattice 23](https://saforem2.github.io/lattice23)
   - [{{< fa brands github >}} `saforem2/lattice23`](https://github.com/saforem2/lattice23)
-- [LQCD @ PASC 23](https://saforem2.github.io/lqcd-pasc23)
+- [{{< fa solid person-chalkboard >}} LQCD @ PASC 23](https://saforem2.github.io/lqcd-pasc23)
   - [{{< fa brands github >}} `saforem2/lqcd-pasc23`](https://github.com/saforem2/lattice23)
 
 
@@ -168,6 +170,12 @@ ax.set_rticks([0.5, 1.0, 1.5, 2.])
 ax.grid(True)
 plt.show()
 ```
+
+::: footer
+
+[{{< fa brands github >}} `slides.set_plot_style()`](https://github.com/saforem2/slides-template/blob/main/src/slides/__init__.py#L56)
+
+:::
 
 # Tabsets
 
