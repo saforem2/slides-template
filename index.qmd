@@ -61,7 +61,7 @@ format:
 [(feel free to make your own!)]{style="color:#777777; font-size:1.2em; font-weight: bold;"}  
 [<br>&nbsp;]{style="padding-bottom: 0.5rem;"}  
 [{{< fa solid home >}}](https://samforeman.me) Sam Foreman  
-[[{{< fa brands github >}} `saforem2/`](https://github.com/saforem2/)]{style="border-bottom: 0.5px solid #00ccff;"}[[`slide-template`](https://github.com/saforem2/slide-template)]{style="border-bottom: 0.5px solid #00ccff;"}
+[[{{< fa brands github >}} `saforem2/`](https://github.com/saforem2/)]{style="border-bottom: 0.5px solid #00ccff;"}[[`slides-template`](https://github.com/saforem2/slides-template)]{style="border-bottom: 0.5px solid #00ccff;"}
 
 :::
 
